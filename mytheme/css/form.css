@@ -1,0 +1,187 @@
+/** ----------------------------------------------------------
+ *
+ * This stylesheet includes both generic form styles and 
+ *    additional form styles for the User Defined Form Module.
+ *
+ ** ------------------------------------------------------- */
+
+
+/* GENERIC FORMS
+----------------------------------------------- */
+
+form {
+    
+}
+div.field {
+    margin: 0 0 1em 0;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+form label {
+    margin-bottom: 5px;
+}
+    form label.left {
+        display: block;
+    }
+	.typography form label.right {
+		text-align: left;
+    }
+
+form input.text,
+form textarea,
+form select {
+    width: 100%;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #dad9d9;
+	font-family: inherit;
+	font-size: inherit;
+	box-sizing: border-box;
+}
+form input.text,
+form textarea {
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+form input.text:focus,
+form textarea:focus,
+form .textajaxuniquetext:focus,
+form select:focus {
+    outline:none;
+}
+form input[disabled], form textarea[disabled] {
+    background-color: #f7f7f7;
+    border: 1px solid #dad9d9;
+}
+textarea {
+    resize: vertical; /* forces text area to be resized vertically only */
+}
+
+
+/* Radio and Checkbox */
+.field .checkbox, .field .radio {
+	vertical-align: middle;
+	margin-bottom: 3px;
+}
+    .checkbox label.right,
+    .radio label.right {
+        display: inline;
+    }
+
+/* Chris Bolt, Options set field */
+.optionset ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.optionset li {
+	float: left;
+}
+.optionset.stacked li {
+	float: none;
+	clear: both;
+}
+.stacked {
+	clear: left;
+	float: none;
+}
+
+/* Messages */
+.message {
+	display: inline-block;
+    background-color: #fef4ba;
+    padding: 5px 10px;
+    border: 1px solid #e8c805;
+    border-radius: 3px;
+}
+    .message.good {
+        background-color: #ecf9d0;
+        border-color: #8fbe00;
+    }
+    .message.bad, .message.required {
+        background-color: #f9d0d0;
+        border-color: #cf0000;
+        color: #b80000;
+    }
+	
+
+/* This code builds a label on the side form */
+.middleColumn {
+	display: block;
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 70%;
+	float: right;
+}
+.field {
+	clear: both;	
+}
+label.left {
+	width: 30%;
+ 	float:left; 
+	margin: 6px 0 6px 0;
+	color: inherit;
+}
+/* End label on the side form */
+
+
+/* ACTIONS */
+.Actions {
+    margin-bottom: 1em;
+}
+    a.btn, .Actions button, .Actions input[type="submit"], .Actions .action {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+		font-family: inherit;
+		font-size: inherit;
+		cursor: pointer;
+		
+		/*
+		border-radius: 0;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		*/
+		padding: 4px 10px; /* fix rediculously small size in ie */
+    }
+    a.btn:hover, .Actions button:hover, .Actions input[type="submit"]:hover, .Actions .action:hover {
+        
+	}
+
+/* AREA SPECIFIC */
+    /* LOGIN and FORGOT PASSWORD */
+    #Remember {
+        min-height: 20px;
+    }
+    #ForgotPassword {
+        clear: left;
+    }
+
+/* style placeholders */
+::-webkit-input-placeholder {
+	color: inherit;	
+    opacity: 1; 
+}
+:-moz-placeholder {
+	color: inherit;	
+    opacity: 1; 
+}
+::-moz-placeholder {
+	color: inherit;	
+    opacity: 1; 
+}
+:-ms-input-placeholder {
+	color: inherit;	
+    opacity: 1; 
+}
+.labelTextFieldInactive {
+	color: inherit;	
+    opacity: 1; 
+}

@@ -1,0 +1,25 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+
+@import url(reset.css);
+@import url(base.css);
+@import url(typography.css);
+
+body.mceContentBody {
+	padding: 10px;
+	margin: 0;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444;
+	font-size: 12px;
+	
+	background: #fff;
+}
+body.mceContentBody a.broken {
+	background-color: #FF7B71;
+	border: 1px red solid;
+	color: #fff;
+	padding: 1px;
+	text-decoration: underline;
+}

@@ -1,0 +1,211 @@
+/* Font face example */
+/*@font-face {
+    font-family: 'AlrightSans';
+    src: url('/themes/mytheme/webfonts/alrightsans-regular-v3-webfont.eot');
+    src: url('/themes/mytheme/webfonts/alrightsans-regular-v3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/themes/mytheme/webfonts/alrightsans-regular-v3-webfont.woff') format('woff'),
+         url('/themes/mytheme/webfonts/alrightsans-regular-v3-webfont.ttf') format('truetype'),
+         url('/themes/mytheme/webfonts/alrightsans-regular-v3-webfont.svg#alright_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+ 
+/* GENERIC STYLES 
+-------------------------------------------- */
+
+.typography {
+	
+}
+
+/* PARAGRAPHS 
+-------------------------------------------- */
+.typography p { 
+ 	
+}
+
+.typography .small {
+	font-size: 10px;	
+}
+
+.typography .leadin, .typography .large  {
+	font-size: 14px;
+}
+
+.typography .marginbottom {
+	margin-bottom: 1em !important
+}
+.typography .nomargins {
+	margin: 0 !important;	
+}
+
+
+/* INLINE STYLES
+-------------------------------------------- */
+
+/* TABLES
+-------------------------------------------- */
+.typography table {
+	max-width: 100%;
+	margin-top: 1em;
+}
+.typography table td, .typography table th {
+	vertical-align: top;
+}
+.typography table td[valign='bottom'], .typography table th[valign='bottom'] {
+	vertical-align: bottom;
+}
+.typography table td[valign='middle'], .typography table th[valign='middle'] {
+	vertical-align: middle;
+}
+.typography table tr:last-child td p {
+	margin-bottom: 0;	
+}
+
+/* base styles for tables with borders */
+
+
+/* QUOTES
+-------------------------------------------- */
+
+/* LINKS 
+-------------------------------------------- */
+
+.typography a { 
+ 	text-decoration: none;
+	color: #910028;
+}
+	.typography a:hover { 
+ 		text-decoration: underline;
+	}
+	
+	.typography a img {
+		border: 0;	
+	}
+
+
+/* LIST STYLES 
+-------------------------------------------- */
+.typography ul, .typography ol {
+	margin-top: 0;
+}
+.typography ul ul, .typography ol ol {
+	margin-bottom: 0;	
+}
+		
+/* HEADER STYLES 
+-------------------------------------------- */
+
+.typography h1 {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+.typography h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	margin-top: 15px;
+}
+
+.typography h3 {
+	margin: 0;
+}
+.typography h4 {
+	margin: 0;
+}
+.typography h5 {
+	margin: 0;
+}
+.typography h6 {
+	margin: 0;
+}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+-------------------------------------------- */
+.typography .left {
+	text-align: left;
+}
+.typography .center {
+	text-align: center;
+}
+.typography .right {
+	text-align: right;
+}
+
+/* IMAGES 
+-------------------------------------------- */
+.typography img {
+   /* border: 5px solid #d7d7d7;*/
+   max-width: 100%; /* prevents width being wider than 100% */
+   height: auto; /* resets the image height so that it maintains its aspect ratio when width is set */
+   /*background: transparent url(../images/ajax-loader.gif) no-repeat center center;*/
+}
+.typography img.left {
+    float: left;
+    max-width: 50%;
+    margin: 5px 20px 10px 0;
+}
+.typography img.right {
+    float: right;
+    max-width: 50%; /* Responsive width */
+    margin: 5px 0 10px 20px;
+}
+.typography img.leftAlone {
+    /*float: left;
+    margin-right: 100%;
+    margin-bottom: 10px;*/
+    clear: both;
+}
+.typography img.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    clear: both;
+}
+.typography .captionImage { width: 100%; margin-top: 5px; }
+.typography .captionImage img { margin: 0; }
+  .typography .captionImage.left {
+    float: left;
+    margin: 5px 30px 20px 0px;
+  }
+  .typography .captionImage.right{
+    float: right;
+    margin: 5px 0 20px 30px;
+  }
+  .typography .captionImage.left[style],
+  .typography .captionImage.right[style] {
+    max-width: 50%; /* Overides core width to make responsive */
+  }
+  .typography .captionImage.left img,
+  .typography .captionImage.right img {
+    float: none;
+    max-width: none;
+    width: 100%;
+  }
+  .typography .captionImage.left img {
+    margin-right: -10px;
+  }
+  .typography .captionImage.right img {
+    margin-left: -10px;
+  }
+  .typography .captionImage.right p {
+    margin-left: -10px;
+    text-align: left;
+    margin-left: -10px;
+  }
+.typography .captionImage.leftAlone{
+  float:none;
+  margin: 0 20px 20px 0px;
+}
+.typography .captionImage.center{
+  margin: 0 auto 20px;
+}
+.typography .captionImage p {
+  clear: both;
+  margin: 5px 0;
+  font-style: italic;
+  color: #888;
+}

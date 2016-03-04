@@ -1,0 +1,28 @@
+#
+# Because this folder is writable whitelist allowed files just in case someone figures out a hack to write to it
+#
+Deny from all
+<FilesMatch "\.(?i:js|css|gif|png|jpg|jpeg)$">
+	Allow from all
+</FilesMatch>
+
+# We disable PHP via several methods
+# Replace the handler with the default plaintext handler
+AddHandler default-handler php phtml php3 php4 php5 inc
+
+<IfModule mod_php5.c>
+	# Turn the PHP engine off
+	php_flag engine off
+</IfModule>
+
+#
+# Prevent images breaking on third party combined files
+#
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	# Fancybox
+	RewriteRule (.*)fancybox_buttons\.png ../thirdparty/fancybox/source/helpers/fancybox_buttons.png [L,QSA]
+	RewriteRule (.*)(fancybox(.*)\.(png|gif|jpg)) ../thirdparty/fancybox/source/$2 [L,QSA]
+	
+</IfModule>

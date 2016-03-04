@@ -1,0 +1,50 @@
+/* Common styles */
+
+/* Next prev */
+.previousPage {
+	float: left;	
+}
+.nextPage {
+	float: right;	
+}
+
+/* Add to any */
+.a2a_default_style {
+	padding-bottom: 1em !important;	
+}
+
+.authorDate {
+	font-size: 10px;
+}
+
+.blogSummary, .blogEntry {
+	padding-bottom: 1em;
+}
+
+.blogSummary img, .blogEntry img {
+	max-width: 100%;
+	height: auto;	
+}
+
+#PageNumbers {
+	clear: both;	
+}
+
+#SideBar {
+	
+}
+
+.WidgetHolder {
+	margin-bottom: 1em;
+}
+.WidgetHolder h3 {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #777;	
+}
+.WidgetHolder ul {
+	padding: 0; margin: 0;
+}
+.WidgetHolder li {
+	list-style-type: none;	
+}

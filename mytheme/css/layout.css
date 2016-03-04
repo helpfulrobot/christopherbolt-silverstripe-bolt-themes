@@ -1,0 +1,92 @@
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444;
+	font-size: 12px;
+	
+	background: #fff;
+	
+	-webkit-text-size-adjust: none;
+}
+
+
+/* Header 
+-------------------------------------------- */
+
+
+/* Navigation 
+-------------------------------------------- */
+
+
+/* Footer 
+-------------------------------------------- */
+
+
+/* Content  / Layout
+-------------------------------------------- */
+
+/* misc */
+ul.contentList {
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+.ErrorPage h1.seo {
+	display: block;	
+}
+.urlSecurity h1.seo {
+	display: block;	
+}
+.clear {
+	clear: both;	
+}
+.seo {
+	display: none;	
+}
+.hidden {
+	visibility: hidden;	
+}
+/* Screen size specific stuff */
+/* Desktop */
+@media only screen and (min-width: 960px) {
+	
+}
+/* Tablet, large phone */
+@media only screen and (max-width: 959px) {
+	
+}
+/* -------------
+Put your layout changes above
+These options are ONLY for hiding revealing things, only modify the sizes
+MUST keep max and min sizes!
+*/
+/* Big Desktop Size */
+@media only screen and (min-width: 1090px) {
+	.bigDesktopHide {
+		display: none !important;
+	}
+	.desktopHide {
+		display: none !important;	
+	}
+}
+/* Desktop Size / large tablets */
+@media only screen and (min-width: 960px) and (max-width: 1089px) {
+	.desktopHide {
+		display: none !important;	
+	}
+}
+/* Tablet size / very large phones */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.tabletHide {
+		display: none !important;	
+	}
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	.mobileHide {
+		display: none !important;	
+	}
+}
